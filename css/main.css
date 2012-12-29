@@ -14,6 +14,7 @@ body {
   line-height: 1.4;
   background-image: url('../img/bcg.png');
   background-repeat: repeat;
+  font-family: 'Nunito', sans-serif;
 }
 ::-moz-selection {
   background: #b3d4fc;
@@ -171,7 +172,7 @@ a {
    Headings
    ========================================================================== */
 h1 {
-  font-family: 'Helvetica';
+  font-family: 'Nunito', sans-serif;
   font-size: 1.95em;
   margin: 0;
   color: #f25334;
@@ -492,7 +493,7 @@ table {
     Less
    ========================================================================== */
 /* ==========================================================================
-    Général
+    Général  grid=1170gs
    ========================================================================== */
 .hiddenTitle {
   display: none;
@@ -511,7 +512,6 @@ header {
 }
 .headwrapper li {
   display: inline-block;
-  margin-right: 3em;
   text-align: center;
 }
 .headwrapper li:last-child {
@@ -521,12 +521,34 @@ header {
   width: 1280px;
 }
 .headwrapper li a {
-  color: black;
+  color: #5da392;
   text-decoration: none;
   font-size: 1.3em;
+  font-family: 'Nunito', sans-serif;
+  padding: 1em;
 }
-.headwrapper li :hover {
-  color: #339966;
+.headwrapper li:hover {
+  background-color: #f2f2f2;
+}
+.headwrapper li:hover .dropDwn {
+  transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  /* Firefox 4 */
+
+  -webkit-transition-delay: 0.3s;
+  /* Safari and Chrome */
+
+  -o-transition-delay: 0.3s;
+  /* Opera */
+
+  visibility: visible;
+  color: black;
+  background-color: #f2f2f2;
+  /*    -moz-box-shadow: 2px 1px 10px 0px #656565;
+-webkit-box-shadow: 2px 1px 10px 0px #656565;
+-o-box-shadow: 2px 1px 10px 0px #656565;
+box-shadow: 2px 1px 10px 0px #656565;*/
+
 }
 .headwrapper ul {
   text-align: center;
@@ -536,35 +558,90 @@ header {
   margin: 0 auto;
 }
 nav {
-  margin-top: 2.5em;
+  margin-top: 1.5em;
 }
-.intervenants {
+.dropDwn {
+  position: absolute;
+  visibility: hidden;
+}
+.dropDwn li {
+  display: block;
+  text-align: left;
+}
+.dropDwn li a {
+  color: black ;
+  margin-left: 0.4em;
+}
+.dropDwn li a:hover {
+  color: #5da392;
+}
+.wrapper {
   margin: 0 auto;
-  width: 71em;
+  width: 73em;
+  margin-top: 10em;
+}
+.wrapper .mainTitle {
+  margin-bottom: 1em;
+}
+.descrPoste {
+  color: #5da392;
+  margin-top: 0;
+}
+.int {
+  height: 27em;
 }
 .img {
   height: 300px;
   width: 300px;
   border-style: solid;
-  border-color: #339966;
+  border-color: #5da392;
   border-width: 30px;
   border-radius: 200px 200px 200px 200px;
   float: left;
 }
-.intervenants img {
+.wrapper img {
   height: 300px;
   width: 300px;
   border-radius: 150px 150px 150px 150px;
 }
-.intervenants .descr {
+.wrapper .descr {
   width: 35em;
   float: right;
   width: 41em;
-  margin-top: 3em;
 }
-.int {
+.contFoot {
+  background-image: url('../img/navdot.png');
+  background-repeat: repeat;
+}
+footer {
   clear: both;
-  padding-top: 12em;
+  width: 73em;
+  margin: 0 auto;
+}
+.colFoot {
+  width: 22.9em;
+  display: inline-block;
+  margin-right: 1.7em;
+  list-style-type: none;
+  vertical-align: top;
+  margin-top: 1.5em;
+}
+.colFoot:last-child {
+  margin-right: 0em;
+}
+.colFoot a {
+  color: #f2f2f2;
+}
+.colFoot a:hover {
+  text-decoration: undeline 1px;
+}
+.smTitle {
+  color: #f2f2f2;
+  font-size: 1.3em;
+}
+.welcome {
+  width: 49.14%;
+  float: left;
 }
 /* ==========================================================================
    Media Queries

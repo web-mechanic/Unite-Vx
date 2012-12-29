@@ -15,7 +15,9 @@ body {
     font-size: 16px;
     line-height: 1.4;
     background-image: url('../img/bcg.png');
-    background-repeat: repeat
+    background-repeat: repeat;
+    font-family: 'Nunito', sans-serif;
+
     
 }
 
@@ -209,7 +211,7 @@ a{
    ========================================================================== */
 
 h1 {
-  font-family: 'Helvetica';
+  font-family: 'Nunito', sans-serif;
   font-size: 1.95em;
   margin: 0;
   color: @orange;
@@ -554,12 +556,21 @@ table {
 /* ==========================================================================
     Less
    ========================================================================== */
+.three-colscont(){
+width: 22.9em;
+display: inline-block;
+margin-right: 1.7em;
+list-style-type: none;
+vertical-align: top;
+}
 
- @green: #339966;
+
+ @green: #5DA392;
  @orange: #f25334;
+ @grey: #F2F2F2;
 
    /* ==========================================================================
-    Général
+    Général  grid=1170gs
    ========================================================================== */
 .hiddenTitle{
   display: none;
@@ -586,8 +597,7 @@ header{
 
 .headwrapper  li{
   display:inline-block;
-    margin-right:3em;
-        text-align: center;
+  text-align: center;
 }
 
 .headwrapper li:last-child{
@@ -600,13 +610,30 @@ header{
 }
 
 .headwrapper  li a{
-  color: black;
+  color: @green;
   text-decoration: none;
   font-size: 1.3em;
+  font-family: 'Nunito', sans-serif;
+  padding: 1em;
 }
 
-.headwrapper  li :hover{
-  color: @green;
+.headwrapper  li:hover{
+  background-color: @grey;
+
+  .dropDwn{
+    transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s; /* Firefox 4 */
+    -webkit-transition-delay: 0.3s; /* Safari and Chrome */
+    -o-transition-delay: 0.3s; /* Opera */
+    visibility: visible;
+    color:black;
+    background-color: @grey;
+/*    -moz-box-shadow: 2px 1px 10px 0px #656565;
+-webkit-box-shadow: 2px 1px 10px 0px #656565;
+-o-box-shadow: 2px 1px 10px 0px #656565;
+box-shadow: 2px 1px 10px 0px #656565;*/
+
+  }
 
 }
 
@@ -620,12 +647,45 @@ text-align: center;
 }
 
 nav {
-  margin-top: 2.5em;
+  margin-top: 1.5em;
 }
 
-.intervenants{
+.dropDwn{
+  position: absolute;
+  visibility: hidden;
+
+   li{
+    display: block;
+    text-align: left;
+
+    a{
+      color: black ; 
+      margin-left: 0.4em;
+
+      &:hover{
+        color:@green;
+      }
+    }
+  }
+}
+
+.wrapper{
 margin: 0 auto;
-width: 71em;
+width: 73em;
+margin-top: 10em;
+
+  .mainTitle{
+    margin-bottom: 1em;
+  }
+}
+
+.descrPoste{
+  color:@green;
+  margin-top: 0;
+ }
+
+.int{
+  height:27em;
 }
 
 
@@ -639,28 +699,63 @@ width: 71em;
   float:left;
 }
 
-.intervenants img{
+.wrapper img{
   height: 300px;
   width: 300px;
-  border-radius: 150px 150px 150px 150px;
-
- 
+  border-radius: 150px 150px 150px 150px; 
 }
 
-.intervenants .descr{
+.wrapper .descr{
   width:35em;
   float:right;
   width: 41em;
-  margin-top: 3em;
+
 }
 
-.int{
+.contFoot{
+    background-image: url('../img/navdot.png');
+  background-repeat: repeat;  
+}
+
+footer{
   clear:both;
-  padding-top: 12em;
+  width:73em;
+  margin: 0 auto;
 }
 
+.colFoot{
+  .three-colscont;
+  margin-top: 1.5em;
 
+  &:last-child{
+  margin-right: 0em;
 
+}
+
+a{
+  color:@grey;
+}
+
+a:hover{
+  text-decoration: undeline 1px;
+
+}
+}
+
+.smTitle{
+color:@grey;
+font-size: 1.3em;
+}
+
+.welcome{
+
+width:49.14%;
+float:left;
+}
+
+.agenda{
+
+}
 
 
 /* ==========================================================================

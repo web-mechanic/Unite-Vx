@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Amaranth:700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
 
         
     </head>
@@ -21,13 +21,19 @@
         <![endif]-->
 <div class="headwrapper">
 <header>
-    <h1> <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo Sebio" title="logo de Sebio"></a> </h1>
+    <h1> <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo de l'unité voix" title="logo de l'unité voix"></a> </h1>
 
     <nav>
         <ul>
             <li><a href="index.html">Acceuil</a></li>
             <li><a href="lunite.html">L'unité</a></li>
-            <li><a href="intervenants.html">les intervenants</a></li>
+            <li><a href="intervenants.html">les intervenants</a>
+            <ul class="dropDwn">
+                <li><a href="html/equipe.html">Les membres de l'équipe</a></li>
+                <li><a href="collaborateurs.html">Les collaborateurs</a></li>
+                <li><a href="cliniques.html">Les cliniques</a></li>
+            </ul>
+            </li>
             <li><a href="recherche.html">Recherche</a></li>
             <li><a href="agenda.html">Agenda</a></li>
             <li><a href="enseignement.html">Enseignement</a></li>
@@ -37,106 +43,78 @@
     </nav>
 </header>
 </div>
-<section class="intervenants">
-    <ul>
-        <li class="int">
-            <div class="img">
-                <img src="img/NomPrenom.png" alt="Photo de la personne présentée." class="photopres">
-            </div>
-            <div class="descr">
-                <h1>
-                    <span>Nom</span>
-                    <span>Prénom</span>
-                </h1>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia inventore maxime fugit culpa quae cumque earum rerum. Voluptatum quasi iste cupiditate qui natus itaque ipsum quo dolores nobis dolorum sunt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ut fugit fuga aliquid beatae quaerat ratione pariatur quae est distinctio ad quam totam assumenda at placeat tenetur soluta perferendis fugiat?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quasi sint sequi blanditiis eum sit quas maxime voluptatum quia deleniti quo magni cupiditate sapiente ad inventore recusandae at error distinctio.</p>
-                
-                <span><a href="unite.html">Nom de la spécialité</a></span>
-            </div>
-        
-        </li>
 
-        <li class="int">
-            <div class="img">
-                <img src="img/NomPrenom.png" alt="Photo de la personne présentée." class="photopres">
-            </div>
-            <div class="descr">
-                <h1>
-                    <span>Nom</span>
-                    <span>Prénom</span>
-                </h1>
+<div class="wrapper">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia inventore maxime fugit culpa quae cumque earum rerum. Voluptatum quasi iste cupiditate qui natus itaque ipsum quo dolores nobis dolorum sunt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ut fugit fuga aliquid beatae quaerat ratione pariatur quae est distinctio ad quam totam assumenda at placeat tenetur soluta perferendis fugiat?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quasi sint sequi blanditiis eum sit quas maxime voluptatum quia deleniti quo magni cupiditate sapiente ad inventore recusandae at error distinctio.</p>
-                
-                <span><a href="unite.html">Nom de la spécialité</a></span>
-            </div>
-        
-        </li>
+    <section class="welcome">
 
-        <li class="int">
-            <div class="img">
-                <img src="img/NomPrenom.png" alt="Photo de la personne présentée." class="photopres">
-            </div>
-            <div class="descr">
-                <h1>
-                    <span>Nom</span>
-                    <span>Prénom</span>
-                </h1>
+        <h1>bienvenue</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam officiis dolore nemo cumque cupiditate fugiat aspernatur reprehenderit nesciunt quos rerum ipsa sunt odio! Ipsum quae tempore neque laboriosam. Veritatis soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo sequi voluptas aperiam veniam voluptate qui ut consequatur ullam itaque nulla modi dolorem vero. Natus rem itaque at nemo eius perferendis!</p>
+    </section>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia inventore maxime fugit culpa quae cumque earum rerum. Voluptatum quasi iste cupiditate qui natus itaque ipsum quo dolores nobis dolorum sunt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ut fugit fuga aliquid beatae quaerat ratione pariatur quae est distinctio ad quam totam assumenda at placeat tenetur soluta perferendis fugiat?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quasi sint sequi blanditiis eum sit quas maxime voluptatum quia deleniti quo magni cupiditate sapiente ad inventore recusandae at error distinctio.</p>
+    <div class="agenga">
+        <h1>Agenda</h1>
 
-                <span><a href="unite.html">Nom de la spécialité</a></span>
-            </div>
-        
-        </li>
-    </ul>
-</section>
 
+        <span class="dateArticle">Publié le <time>17 Mars 2012</time>
+    </div>
+
+    
+
+</div>
+<div class="contFoot">
 <footer>
+    <div class="colFoot">
     <ul>
-        <li><a href=""></a> 
+        <li><a class="smTitle" href="#">Le service</a> 
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#">Le centre</a></li>
+                <li><a href="#">Les domaines d'intérêts</a></li>
             </ul>
          </li>
     </ul>
     <ul>
-        <li><a href=""></a>
+        <li><a class="smTitle" href="#">Les intervenants</a>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#">L'équipe</a></li>
+                <li><a href="#">Les collaborateurs</a></li>
+                <li><a href="#">Les cliniques</a></li>
         </ul> </li>
     </ul>
+    </div>
+    <div class="colFoot">
     <ul>
-        <li><a href=""></a>
+        <li><a class="smTitle" href="">Recherche</a>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#">Ou sommes-nous actifs?</a></li>
+                <li><a href="#">Futures activités</a></li>
+                <li><a href="#">Anciennes activités</a></li>
             </ul>
         </li>
     </ul>
     <ul>
-        <li><a href=""></a>
+        <li><a class="smTitle" href="#">Enseignement</a>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#">Formation de l'ULG</a></li>
+                <li><a href="#">Le référentiel</a></li>
             </ul>
         </li>
     </ul>
+    </div>
+    <div class="colFoot">
     <ul>
-        <li><a href=""></a> 
+        <li><a class="smTitle" href="#">Publications</a> 
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">Thès de doctorat</a></li>
+                <li><a href="#">Post doc à liège</a></li>
             </ul> 
         </li>
     </ul>
+    </div>
 </footer>
-
+</div>
 
         
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
