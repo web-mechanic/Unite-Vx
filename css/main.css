@@ -525,7 +525,7 @@ header {
   text-decoration: none;
   font-size: 1.3em;
   font-family: 'Nunito', sans-serif;
-  padding: 1em;
+  margin: 1em;
 }
 .headwrapper li:hover {
   background-color: #f2f2f2;
@@ -640,7 +640,7 @@ footer {
   font-size: 1.3em;
 }
 .welcome {
-  width: 49.14%;
+  width: 66%;
   float: left;
 }
 /* ==========================================================================
