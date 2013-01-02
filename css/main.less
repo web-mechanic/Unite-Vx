@@ -11,12 +11,12 @@ textarea {
 }
 
 body {
-  margin:0;
+    margin:0;
     font-size: 16px;
     line-height: 1.4;
     background-image: url('../img/bcg.png');
     background-repeat: repeat;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'openSans', sans-serif;
 
     
 }
@@ -217,10 +217,10 @@ h1 {
   color: @orange;
 }
 h2 {
-  font-family: 'Helvetica';
-  font-size: 1.7em;
-  margin: 0.67em 0;
-  color: #f25334;
+  font-family: 'Nunito', sans-serif;
+  color:@green;
+  font-size: 1.4em;
+  margin-bottom: 0.2em;
 }
 h3 {
   font-size: 1.2em;
@@ -559,13 +559,20 @@ table {
 .three-colscont(){
 width: 22.9em;
 display: inline-block;
-margin-right: 1.7em;
+margin-right: 1.875em;
 list-style-type: none;
 vertical-align: top;
 }
 
+.height-colscont(){
+width: 66%;
+float: left;
+margin-right: 1.875em;
+}
+
 
  @green: #5DA392;
+ @lightGreen:#5bac99;
  @orange: #f25334;
  @grey: #F2F2F2;
 
@@ -581,19 +588,20 @@ vertical-align: top;
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* ==========================================================================
+   Style généraux de la page
+   ========================================================================== */
 .headwrapper{
-  background-image: url('../img/navdot.png');
-  background-repeat: repeat;  
+  background-image: url('../img/wsHeader.png');
+  background-repeat: no-repeat;
   height: 18em;
 }
-
 
 header{
   width: 100%;
   height: 288px;
 }
-
-
 
 .headwrapper  li{
   display:inline-block;
@@ -601,7 +609,6 @@ header{
 }
 
 .headwrapper li:last-child{
-
   margin-right:0;
 }
 
@@ -612,7 +619,7 @@ header{
 .headwrapper  li a{
   color: @green;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.36em;
   font-family: 'Nunito', sans-serif;
   margin: 1em;
 }
@@ -628,13 +635,7 @@ header{
     visibility: visible;
     color:black;
     background-color: @grey;
-/*    -moz-box-shadow: 2px 1px 10px 0px #656565;
--webkit-box-shadow: 2px 1px 10px 0px #656565;
--o-box-shadow: 2px 1px 10px 0px #656565;
-box-shadow: 2px 1px 10px 0px #656565;*/
-
   }
-
 }
 
 .headwrapper  ul{
@@ -679,6 +680,78 @@ margin-top: 10em;
   }
 }
 
+/* ==========================================================================
+   Index
+   ========================================================================== */
+.welcome{
+.height-colscont;
+  li{
+    list-style-type: disc;
+    margin-left: 1.2em;
+  }
+}
+
+.agenda{
+  float: right;
+  width: 31.43%;
+  p{
+    margin:0;
+  }
+}
+
+.agendaDescr{
+  color:@green;
+  font-size: 1.4em;
+  margin-bottom: 0.2em;
+}
+
+.news{
+.height-colscont;
+margin-top: 2.5em;
+
+  header{
+  height: auto;
+
+   h3{
+      display: inline;
+    }
+  }
+}
+
+/* ==========================================================================
+   Intervenants et autres
+   ========================================================================== */
+
+.unitPic{
+  float:left;
+  margin-right: 1.875em;
+  margin-bottom: 1.875em;
+}
+
+.domInt{
+  clear:both;
+}
+
+.intDetails{
+  .three-colscont;
+  
+
+}
+
+.intDetailslast{
+  .three-colscont;
+  
+  margin-right: 0em;
+
+}
+
+
+
+
+/* ==========================================================================
+   Intervenants et autres
+   ========================================================================== */
+
 .descrPoste{
   color:@green;
   margin-top: 0;
@@ -688,39 +761,93 @@ margin-top: 10em;
   height:27em;
 }
 
-
-.img{
+.imgEq{
     height: 300px;
   width: 300px;
   border-style:solid;
   border-color:@green;
   border-width:30px;
   border-radius: 200px 200px 200px 200px;
-  float:left;
+  float:left; 
+
+    img{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px 150px 150px 150px;
+}
 }
 
-.wrapper img{
-  height: 300px;
-  width: 300px;
-  border-radius: 150px 150px 150px 150px; 
+.imgEq:hover{
+border-color:@lightGreen; 
 }
+ 
 
 .wrapper .descr{
   width:35em;
   float:right;
   width: 41em;
+}
 
+.descrPoste{
+  color:@orange;
+}
+
+
+
+/* ==========================================================================
+   Onglet enseignement
+   ========================================================================== */
+.enseignement{
+  width:100%;
+  margin-top: 1.4em;
+  
+  
+  th{
+    padding: 0.4em;
+    background-color: white;
+    color: @orange;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 1.2em;
+    
+  }
+  tr{
+    background-color: @green;
+    color: white;
+  }
+
+  tr:nth-child(odd){
+    background-color: @lightGreen;
+  }
+
+  td{
+    padding: 0.35em 0em 0.35em 0.4em;
+    vertical-align: middle;
+    font-size: 0.9em;
+  }
+}
+.libelle{
+  width:8em;
+}
+
+.nbrHeure{
+  width:6em;
+}
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer{
+  width:73em;
+  margin: 0 auto;
 }
 
 .contFoot{
-    background-image: url('../img/navdot.png');
+  background-image: url('../img/navdot.png');
   background-repeat: repeat;  
-}
-
-footer{
+  margin-top: 2.5em;
+  padding-bottom: 1.5em;
   clear:both;
-  width:73em;
-  margin: 0 auto;
 }
 
 .colFoot{
@@ -746,17 +873,6 @@ a:hover{
 color:@grey;
 font-size: 1.3em;
 }
-
-.welcome{
-
-width:66%;
-float:left;
-}
-
-.agenda{
-
-}
-
 
 /* ==========================================================================
    Media Queries
