@@ -830,6 +830,7 @@ footer {
   vertical-align: top;
   margin-top: 1.5em;
   color: white;
+  height: 12em;
 }
 .altNavTitle:last-child {
   margin-right: 0em;
