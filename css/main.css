@@ -88,11 +88,18 @@ a{color:#f25334;}
 .intDetailslast{width:22.9em;display:inline-block;margin-right:1.875em;list-style-type:none;vertical-align:top;margin-right:0em;}
 .cplu{clear:both;}
 .descrPoste{color:#5da392;margin-top:0;}
-.int{height:27em;}
+.int{height:31em;}
 .imgEq{height:300px;width:300px;border-style:solid;border-color:#5da392;border-width:30px;border-radius:200px 200px 200px 200px;float:left;}.imgEq img{height:300px;width:300px;border-radius:150px 150px 150px 150px;}
 .imgEq:hover{border-color:#5bac99;}
 .wrapper .descr{width:35em;float:right;width:41em;}
 .descrPoste{color:#f25334;}
+.mid{margin-top:-2.5em;}
+.collabo{width:48.8%;float:left;margin-right:1.9em;}.collabo .int{margin-top:2.5em;}
+.collabo .imgEq{border-radius:0px 0px 0px 0px;margin-right:1em;margin-bottom:1em;}.collabo .imgEq img{border-radius:0px 0px 0px 0px;}
+.collabo .descr{width:auto;float:none;}
+.cliniques{vertical-align:top;}.cliniques .int{margin-top:2.5em;}
+.cliniques .imgEq{border-radius:0px 0px 0px 0px;margin-right:1em;margin-bottom:1em;}.cliniques .imgEq img{border-radius:0px 0px 0px 0px;}
+.cliniques .descr{width:auto;float:none;}
 .enseignement{width:100%;margin-top:1.4em;margin-bottom:1.4em;}.enseignement th{padding:0.4em;background-color:white;color:#f25334;text-align:left;vertical-align:middle;font-size:1.2em;}
 .enseignement tr{background-color:#5da392;color:white;}
 .enseignement tr:nth-child(odd){background-color:#5bac99;}
