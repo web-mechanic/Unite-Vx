@@ -565,9 +565,9 @@ vertical-align: top;
 }
 
 .height-colscont(){
-width: 66%;
+width: 68%;
 float: left;
-margin-right: 1.875em;
+
 }
 
 
@@ -664,7 +664,7 @@ header{
   color: rgb(60, 60, 60);
 }
 
-input[type=text] {
+.toolbar input[type=text] {
   -webkit-appearance: none;
   -webkit-box-shadow:
     0 -1px 0 rgba(0, 0, 0, 0.3),
@@ -693,7 +693,7 @@ input[type=text] {
 
 }
 
-input[type=submit] {
+.toolbar input[type=submit] {
   background : url("../img/search.png") no-repeat center center;
   width : 43px;
   height :41px;
@@ -761,10 +761,6 @@ text-align: center;
   height: auto;
 }
 
-nav {
-  margin-top: 1.5em;
-}
-
 .dropDwn{
   position: absolute;
   visibility: hidden;
@@ -790,7 +786,7 @@ width: 73em;
 margin-top: 10em;
 
   .mainTitle{
-    margin-bottom: 1em;
+    margin-bottom: 0.4em;
   }
 }
 
@@ -826,6 +822,7 @@ a{
 .news{
 .height-colscont;
 margin-top: 2.5em;
+margin-right: 0;
 
   header{
   height: auto;
@@ -834,7 +831,7 @@ margin-top: 2.5em;
 
    h3{
       float: left;
-      margin-right: 31em;
+      margin-right: 0.4em;
     }
 
     h4{
@@ -844,6 +841,14 @@ margin-top: 2.5em;
 
   }
 }
+
+.news article{
+  float: left;
+  width: 47%;
+  margin-right: 1.49em;
+  height: 17em;
+  overflow: hidden;
+  }
 
 /* ==========================================================================
    L'unité
@@ -867,11 +872,11 @@ margin-top: 2.5em;
   .three-colscont;  
   margin-right: 0em;
 }
-
-.cplu{
-  clear: both;
+.unite{
+  float: left;
+  width: 31.5%;
+  margin: 0 1.9em 0 0;
 }
-
 
 
 /* ==========================================================================
@@ -1036,16 +1041,11 @@ border-color:@lightGreen;
    ========================================================================== */
 
 
-   .contact{
-
-      .formwrap{
+   .formwrap{     
         width: 22.6em;
         padding-right: 6.7em;
         float: left;
-      }
-      form{
-        
-    }
+
 
       label{
         line-height: 2.5em;
@@ -1134,9 +1134,14 @@ border-color:@lightGreen;
    ========================================================================== */
 .ficheRecherche{
 
+  h1{
+    margin:0.4em 0 0.4em 0;
+  }
+
   li{
-    clear:both;
-    padding-top: 2.5em;
+    float: left;
+    width: 48.9%;
+    margin-right: 0.8em;
   }
 
   img{
