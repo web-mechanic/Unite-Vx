@@ -75,7 +75,7 @@ header{width:100%;height:288px;}
 .headwrapper ul{text-align:center;}
 .headwrapper h1{margin:0 auto;width:28%;height:auto;}
 .dropDwn{position:absolute;visibility:hidden;}.dropDwn li{display:block;text-align:left;}.dropDwn li a{color:black ;margin-left:0.4em;}.dropDwn li a:hover{color:#5da392;}
-.wrapper{margin:0 auto;width:73em;margin-top:10em;}.wrapper .mainTitle{margin-bottom:0.4em;}
+.wrapper{margin:0 auto;width:73em;margin-top:14%;}.wrapper .mainTitle{margin-bottom:0.4em;}
 a{color:#f25334;}
 .welcome{width:68%;float:left;}.welcome li{list-style-type:disc;margin-left:1.2em;}
 .agenda{float:right;width:31.43%;}.agenda p{margin:0;}
